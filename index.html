@@ -12,16 +12,25 @@
 </head>
 <body class="bg-black text-white font-sans antialiased selection:bg-blue-600 selection:text-white">
 
-    <!-- 1. Header (GNB - 로고 이미지 반영) -->
+    <!-- 1. Header (GNB - SVG 물방울 로고 적용) -->
     <header id="header" class="fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-black/60 backdrop-blur-md border-b border-white/10 py-3">
         <div class="max-w-7xl mx-auto px-6 sm:px-8 flex items-center justify-between">
-            <!-- 로고 영역 (이미지 + 텍스트) -->
-            <a href="#" class="flex items-center gap-3 group">
-                <!-- 로고 이미지 (logo.png) -->
-                <img src="logo.png" alt="삼성지하수 로고" class="h-9 sm:h-11 w-auto object-contain transition duration-200 group-hover:scale-105" />
-                <span class="text-lg sm:text-xl font-bold tracking-tight text-white drop-shadow">
-                    삼성지하수
-                </span>
+            <!-- 로고 영역 -->
+            <a href="#" class="flex items-center gap-2.5 group">
+                <!-- 자체 제작 SVG 물방울 아이콘 (이미지 파일 없이 즉시 출력) -->
+                <div class="w-8 h-8 sm:w-9 sm:h-9 bg-blue-600/20 rounded-full flex items-center justify-center border border-blue-500/40 group-hover:scale-105 transition duration-200">
+                    <svg class="w-5 h-5 sm:w-6 sm:h-6 text-blue-400 fill-current" viewBox="0 0 24 24">
+                        <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z" />
+                    </svg>
+                </div>
+                <div class="flex flex-col">
+                    <span class="text-lg sm:text-xl font-bold tracking-tight text-white leading-none drop-shadow">
+                        삼성지하수
+                    </span>
+                    <span class="text-[9px] tracking-widest text-blue-400 font-mono mt-0.5 uppercase">
+                        Groundwater
+                    </span>
+                </div>
             </a>
 
             <!-- 데스크탑 메뉴 -->
@@ -198,13 +207,15 @@
         </div>
     </section>
 
-    <!-- 6. Footer & Contact (푸터에도 로고 이미지 반영) -->
+    <!-- 6. Footer & Contact -->
     <footer id="contact" class="bg-neutral-950 text-neutral-500 py-16 border-t border-neutral-900 text-xs">
         <div class="max-w-7xl mx-auto px-6 sm:px-8 flex flex-col md:flex-row justify-between gap-10">
             <div>
-                <!-- 하단 로고 이미지 -->
-                <div class="flex items-center gap-3 mb-4">
-                    <img src="logo.png" alt="삼성지하수 로고" class="h-8 w-auto object-contain" />
+                <!-- 하단 로고 -->
+                <div class="flex items-center gap-2 mb-4">
+                    <svg class="w-5 h-5 text-blue-400 fill-current" viewBox="0 0 24 24">
+                        <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z" />
+                    </svg>
                     <span class="text-white font-bold text-lg">삼성지하수</span>
                 </div>
                 <p class="leading-relaxed text-neutral-400 max-w-sm">
