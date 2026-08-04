@@ -13,24 +13,24 @@
 <body class="bg-black text-white font-sans antialiased selection:bg-blue-600 selection:text-white">
 
     <!-- 1. Header (GNB) -->
-    <header id="header" class="fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-black/80 backdrop-blur-md border-b border-neutral-800 py-4">
+    <header id="header" class="fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-black/60 backdrop-blur-md border-b border-white/10 py-4">
         <div class="max-w-7xl mx-auto px-6 sm:px-8 flex items-center justify-between">
             <!-- 로고 -->
             <a href="#" class="flex items-center gap-3">
-                <span class="text-xl sm:text-2xl font-black tracking-tight text-white">SAMSUNG</span>
-                <span class="text-xs tracking-widest text-neutral-400 border-l border-neutral-700 pl-3 uppercase">지하수</span>
+                <span class="text-xl sm:text-2xl font-black tracking-tight text-white drop-shadow">SAMSUNG</span>
+                <span class="text-xs tracking-widest text-neutral-300 border-l border-neutral-500 pl-3 uppercase">지하수</span>
             </a>
 
             <!-- 데스크탑 메뉴 -->
-            <nav class="hidden md:flex items-center gap-10 text-sm font-medium tracking-wide text-neutral-300">
-                <a href="#about" class="hover:text-white transition">회사소개</a>
-                <a href="#services" class="hover:text-white transition">사업분야</a>
-                <a href="#projects" class="hover:text-white transition">시공실적</a>
-                <a href="#contact" class="hover:text-white transition text-blue-400 font-semibold">견적문의</a>
+            <nav class="hidden md:flex items-center gap-10 text-sm font-medium tracking-wide text-neutral-200">
+                <a href="#about" class="hover:text-white transition drop-shadow">회사소개</a>
+                <a href="#services" class="hover:text-white transition drop-shadow">사업분야</a>
+                <a href="#projects" class="hover:text-white transition drop-shadow">시공실적</a>
+                <a href="#contact" class="hover:text-white transition text-blue-400 font-semibold drop-shadow">견적문의</a>
             </nav>
 
             <!-- 모바일 햄버거 버튼 -->
-            <button id="menu-btn" class="md:hidden p-2 text-neutral-300 hover:text-white focus:outline-none" aria-label="메뉴 열기">
+            <button id="menu-btn" class="md:hidden p-2 text-neutral-200 hover:text-white focus:outline-none" aria-label="메뉴 열기">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3.75 9h16.5m-16.5 6h16.5" />
                 </svg>
@@ -38,7 +38,7 @@
         </div>
 
         <!-- 모바일 드롭다운 메뉴 -->
-        <div id="mobile-menu" class="hidden md:hidden bg-neutral-950 border-b border-neutral-800 px-6 py-6 space-y-4">
+        <div id="mobile-menu" class="hidden md:hidden bg-neutral-950/90 backdrop-blur-md border-b border-neutral-800 px-6 py-6 space-y-4">
             <a href="#about" class="mobile-link block text-neutral-300 hover:text-white">회사소개</a>
             <a href="#services" class="mobile-link block text-neutral-300 hover:text-white">사업분야</a>
             <a href="#projects" class="mobile-link block text-neutral-300 hover:text-white">시공실적</a>
@@ -46,42 +46,42 @@
         </div>
     </header>
 
-    <!-- 2. Hero Section (비디오 배경) -->
+    <!-- 2. Hero Section (비디오 배경 - 밝기 개선 완료) -->
     <section class="relative h-screen w-full flex items-center justify-center overflow-hidden">
-        <!-- 배경 비디오 -->
-        <video autoPlay loop muted playsInline class="absolute inset-0 w-full h-full object-cover z-0 opacity-40 scale-105">
+        <!-- 배경 비디오 (opacity-80으로 선명하게 조절) -->
+        <video autoPlay loop muted playsInline class="absolute inset-0 w-full h-full object-cover z-0 opacity-80 scale-105">
             <source src="hero-bg.mp4" type="video/mp4" />
         </video>
         
-        <!-- 어두운 오버레이 레이어 -->
-        <div class="absolute inset-0 bg-black/60 z-10"></div>
+        <!-- 어두운 오버레이 레이어 (bg-black/30으로 훨씬 연하게 변경) -->
+        <div class="absolute inset-0 bg-black/30 z-10"></div>
 
-        <!-- 메인 텍스트 -->
+        <!-- 메인 텍스트 (글자에 그림자 효과 적용) -->
         <div class="relative z-20 max-w-7xl mx-auto px-6 sm:px-8 w-full text-left pt-12">
-            <p class="text-blue-500 font-medium tracking-widest text-xs sm:text-sm uppercase mb-4">
+            <p class="text-blue-400 font-semibold tracking-widest text-xs sm:text-sm uppercase mb-4 drop-shadow">
                 Groundwater & Geothermal Energy
             </p>
-            <h1 class="text-3xl sm:text-6xl lg:text-7xl font-bold tracking-tight text-white leading-tight mb-6">
+            <h1 class="text-3xl sm:text-6xl lg:text-7xl font-bold tracking-tight text-white leading-tight mb-6 drop-shadow-md">
                 물량과 깊이의 가치,<br />
                 <span class="text-blue-400">삼성지하수</span>가 만듭니다.
             </h1>
-            <p class="text-base sm:text-lg text-neutral-300 max-w-xl font-light leading-relaxed mb-10">
+            <p class="text-base sm:text-lg text-neutral-100 max-w-xl font-normal leading-relaxed mb-10 drop-shadow">
                 30년 축적된 시공 경험과 최첨단 암반 천공 기술력으로<br class="hidden sm:inline" />
                 가정용, 농업용, 공업용 지하수부터 친환경 지열 공사까지 완벽하게 수행합니다.
             </p>
             
             <div class="flex flex-col sm:flex-row gap-4">
-                <a href="#contact" class="bg-blue-600 hover:bg-blue-500 text-white font-medium px-8 py-3.5 rounded-lg transition duration-200 text-center text-sm">
+                <a href="#contact" class="bg-blue-600 hover:bg-blue-500 text-white font-medium px-8 py-3.5 rounded-lg transition duration-200 text-center text-sm shadow-lg">
                     온라인 견적 문의
                 </a>
-                <a href="#services" class="border border-neutral-700 hover:border-neutral-500 bg-black/40 hover:bg-black/80 text-white font-medium px-8 py-3.5 rounded-lg transition duration-200 text-center text-sm backdrop-blur-sm">
+                <a href="#services" class="border border-white/30 hover:border-white/60 bg-black/30 hover:bg-black/60 text-white font-medium px-8 py-3.5 rounded-lg transition duration-200 text-center text-sm backdrop-blur-sm">
                     사업 분야 보기
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- 3. About Section (회사소개 - 추가됨!) -->
+    <!-- 3. About Section (회사소개) -->
     <section id="about" class="py-24 bg-black border-t border-neutral-900">
         <div class="max-w-7xl mx-auto px-6 sm:px-8">
             <div class="grid md:grid-cols-2 gap-12 items-center">
@@ -168,7 +168,7 @@
         </div>
     </section>
 
-    <!-- 5. Projects Section (시공실적 - 추가됨!) -->
+    <!-- 5. Projects Section (시공실적) -->
     <section id="projects" class="py-24 bg-black border-t border-neutral-900">
         <div class="max-w-7xl mx-auto px-6 sm:px-8">
             <div class="mb-16">
