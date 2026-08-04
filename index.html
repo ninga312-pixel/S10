@@ -81,7 +81,53 @@
         </div>
     </section>
 
-    <!-- 3. Key Services (사업 분야) -->
+    <!-- 3. About Section (회사소개 - 추가됨!) -->
+    <section id="about" class="py-24 bg-black border-t border-neutral-900">
+        <div class="max-w-7xl mx-auto px-6 sm:px-8">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <span class="text-blue-500 text-xs font-semibold tracking-widest uppercase block mb-2">About Us</span>
+                    <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight mb-6">
+                        신뢰와 기술력으로 보답하는<br />
+                        지하수 전문 기업
+                    </h2>
+                    <p class="text-neutral-400 text-sm leading-relaxed mb-6">
+                        삼성지하수는 풍부한 현장 경험과 최신 천공 장비를 바탕으로 최적의 수자원을 개발합니다. 
+                        단순한 구멍을 뚫는 작업을 넘어, 철저한 지질 조사와 영향 평가를 통해 지속 가능한 수자원 이용 환경을 약속드립니다.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4 pt-4 border-t border-neutral-800">
+                        <div>
+                            <span class="text-2xl font-bold text-blue-400">30+년</span>
+                            <p class="text-xs text-neutral-500 mt-1">시공 축적 경력</p>
+                        </div>
+                        <div>
+                            <span class="text-2xl font-bold text-blue-400">100%</span>
+                            <p class="text-xs text-neutral-500 mt-1">사후관리 보장</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-neutral-900 border border-neutral-800 rounded-2xl p-8 flex flex-col justify-center min-h-[280px]">
+                    <h3 class="text-xl font-semibold text-white mb-4">핵심 보유 기술</h3>
+                    <ul class="space-y-3 text-sm text-neutral-300">
+                        <li class="flex items-center gap-3">
+                            <span class="text-blue-500">✓</span> 대형 에어 컴프레셔 및 첨단 암반 천공 장비
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="text-blue-500">✓</span> 수문 조사 및 수질 정밀 분석 시스템
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="text-blue-500">✓</span> 친환경 지열 수평/수직 열교환기 시공
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="text-blue-500">✓</span> 고성능 수중펌프 설치 및 에어징(청소)
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Key Services (사업 분야) -->
     <section id="services" class="py-24 bg-neutral-950 border-t border-neutral-900">
         <div class="max-w-7xl mx-auto px-6 sm:px-8">
             <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
@@ -122,8 +168,35 @@
         </div>
     </section>
 
-    <!-- 4. Footer -->
-    <footer class="bg-black text-neutral-500 py-16 border-t border-neutral-900 text-xs">
+    <!-- 5. Projects Section (시공실적 - 추가됨!) -->
+    <section id="projects" class="py-24 bg-black border-t border-neutral-900">
+        <div class="max-w-7xl mx-auto px-6 sm:px-8">
+            <div class="mb-16">
+                <span class="text-blue-500 text-xs font-semibold tracking-widest uppercase block mb-2">Projects</span>
+                <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">주요 시공 실적</h2>
+            </div>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-neutral-950 border border-neutral-800 rounded-xl p-6">
+                    <span class="text-xs text-blue-400 font-mono">농업용 관정</span>
+                    <h4 class="text-lg font-semibold text-white mt-1 mb-2">음성군 농가 암반 지하수 개발</h4>
+                    <p class="text-xs text-neutral-400">심도 150m 천공 및 수중펌프 인스톨 완료</p>
+                </div>
+                <div class="bg-neutral-950 border border-neutral-800 rounded-xl p-6">
+                    <span class="text-xs text-blue-400 font-mono">공업용 관정</span>
+                    <h4 class="text-lg font-semibold text-white mt-1 mb-2">산업단지 공장용 용수 개발</h4>
+                    <p class="text-xs text-neutral-400">일일 200톤 규모 수량 확보 및 영향평가 완료</p>
+                </div>
+                <div class="bg-neutral-950 border border-neutral-800 rounded-xl p-6">
+                    <span class="text-xs text-blue-400 font-mono">지열 시스템</span>
+                    <h4 class="text-lg font-semibold text-white mt-1 mb-2">신축 전원주택 지열 냉난방 공사</h4>
+                    <p class="text-xs text-neutral-400">지중열교환기 4공 천공 및 배관 연결 완공</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Footer & Contact (견적문의 및 푸터) -->
+    <footer id="contact" class="bg-neutral-950 text-neutral-500 py-16 border-t border-neutral-900 text-xs">
         <div class="max-w-7xl mx-auto px-6 sm:px-8 flex flex-col md:flex-row justify-between gap-10">
             <div>
                 <span class="text-white font-bold text-lg block mb-4">SAMSUNG 지하수</span>
@@ -134,7 +207,7 @@
                 </p>
             </div>
             <div class="space-y-2">
-                <p class="text-white font-medium text-sm mb-2">고객센터</p>
+                <p class="text-white font-medium text-sm mb-2">고객센터 및 견적문의</p>
                 <p class="text-2xl font-bold text-blue-400">010-0000-0000</p>
                 <p>E-mail: contact@samsungdw.co.kr</p>
                 <p>운영시간: 평일 08:00 ~ 18:00</p>
