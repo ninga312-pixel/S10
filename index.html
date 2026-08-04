@@ -15,7 +15,6 @@
     <!-- 1. Header (GNB) -->
     <header id="header" class="fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-black/60 backdrop-blur-md border-b border-white/10 py-3">
         <div class="max-w-7xl mx-auto px-6 sm:px-8 flex items-center justify-between">
-            <!-- 로고 영역 -->
             <a href="#" class="flex items-center gap-2.5 group">
                 <div class="w-8 h-8 sm:w-9 sm:h-9 bg-blue-600/20 rounded-full flex items-center justify-center border border-blue-500/40 group-hover:scale-105 transition duration-200">
                     <svg class="w-5 h-5 sm:w-6 sm:h-6 text-blue-400 fill-current" viewBox="0 0 24 24">
@@ -32,7 +31,6 @@
                 </div>
             </a>
 
-            <!-- 데스크탑 메뉴 -->
             <nav class="hidden md:flex items-center gap-10 text-sm font-medium tracking-wide text-neutral-200">
                 <a href="#about" class="hover:text-white transition drop-shadow">회사소개</a>
                 <a href="#services" class="hover:text-white transition drop-shadow">사업분야</a>
@@ -40,7 +38,6 @@
                 <a href="#board" class="hover:text-white transition text-blue-400 font-semibold drop-shadow">견적문의</a>
             </nav>
 
-            <!-- 모바일 햄버거 버튼 -->
             <button id="menu-btn" class="md:hidden p-2 text-neutral-200 hover:text-white focus:outline-none" aria-label="메뉴 열기">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3.75 9h16.5m-16.5 6h16.5" />
@@ -48,7 +45,6 @@
             </button>
         </div>
 
-        <!-- 모바일 드롭다운 메뉴 -->
         <div id="mobile-menu" class="hidden md:hidden bg-neutral-950/90 backdrop-blur-md border-b border-neutral-800 px-6 py-6 space-y-4">
             <a href="#about" class="mobile-link block text-neutral-300 hover:text-white">회사소개</a>
             <a href="#services" class="mobile-link block text-neutral-300 hover:text-white">사업분야</a>
@@ -88,46 +84,48 @@
         </div>
     </section>
 
-    <!-- 3. About Section (회사소개) -->
+    <!-- 3. About Section (회사소개 - 배경 사진 또렷하게 수정) -->
     <section id="about" class="relative py-28 bg-cover bg-center bg-fixed border-t border-neutral-800" style="background-image: url('https://images.unsplash.com/photo-1541888946425-d0fbb186a5b3?auto=format&fit=crop&w=1920&q=80');">
-        <div class="absolute inset-0 bg-black/80 backdrop-blur-[2px]"></div>
+        <!-- 어두운 오버레이 연하게 조정 (bg-black/40) -->
+        <div class="absolute inset-0 bg-black/40"></div>
+
         <div class="relative z-10 max-w-7xl mx-auto px-6 sm:px-8">
             <div class="grid md:grid-cols-2 gap-12 items-center">
-                <div>
-                    <span class="text-blue-400 text-xs font-semibold tracking-widest uppercase block mb-2">About Us</span>
-                    <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight mb-6">
+                <div class="bg-black/50 p-6 rounded-2xl border border-white/10 backdrop-blur-xs">
+                    <span class="text-blue-400 text-xs font-semibold tracking-widest uppercase block mb-2 drop-shadow">About Us</span>
+                    <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight mb-6 drop-shadow-md">
                         신뢰와 기술력으로 보답하는<br />
                         지하수 전문 기업
                     </h2>
-                    <p class="text-neutral-300 text-sm leading-relaxed mb-6 font-light">
+                    <p class="text-neutral-100 text-sm leading-relaxed mb-6 font-normal drop-shadow">
                         삼성지하수는 풍부한 현장 경험과 최신 천공 장비를 바탕으로 최적의 수자원을 개발합니다. 
                         단순한 구멍을 뚫는 작업을 넘어, 철저한 지질 조사와 영향 평가를 통해 지속 가능한 수자원 이용 환경을 약속드립니다.
                     </p>
-                    <div class="grid grid-cols-2 gap-4 pt-4 border-t border-white/10">
+                    <div class="grid grid-cols-2 gap-4 pt-4 border-t border-white/20">
                         <div>
-                            <span class="text-2xl font-bold text-blue-400">30+년</span>
-                            <p class="text-xs text-neutral-400 mt-1">시공 축적 경력</p>
+                            <span class="text-2xl font-bold text-blue-400 drop-shadow">30+년</span>
+                            <p class="text-xs text-neutral-200 mt-1 drop-shadow">시공 축적 경력</p>
                         </div>
                         <div>
-                            <span class="text-2xl font-bold text-blue-400">100%</span>
-                            <p class="text-xs text-neutral-400 mt-1">사후관리 보장</p>
+                            <span class="text-2xl font-bold text-blue-400 drop-shadow">100%</span>
+                            <p class="text-xs text-neutral-200 mt-1 drop-shadow">사후관리 보장</p>
                         </div>
                     </div>
                 </div>
-                <div class="bg-black/60 border border-white/10 rounded-2xl p-8 backdrop-blur-md flex flex-col justify-center min-h-[280px]">
+                <div class="bg-black/70 border border-white/10 rounded-2xl p-8 backdrop-blur-md flex flex-col justify-center min-h-[280px]">
                     <h3 class="text-xl font-semibold text-white mb-4">핵심 보유 기술</h3>
-                    <ul class="space-y-3 text-sm text-neutral-300">
+                    <ul class="space-y-3 text-sm text-neutral-200">
                         <li class="flex items-center gap-3">
-                            <span class="text-blue-400">✓</span> 대형 에어 컴프레셔 및 첨단 암반 천공 장비
+                            <span class="text-blue-400 font-bold">✓</span> 대형 에어 컴프레셔 및 첨단 암반 천공 장비
                         </li>
                         <li class="flex items-center gap-3">
-                            <span class="text-blue-400">✓</span> 수문 조사 및 수질 정밀 분석 시스템
+                            <span class="text-blue-400 font-bold">✓</span> 수문 조사 및 수질 정밀 분석 시스템
                         </li>
                         <li class="flex items-center gap-3">
-                            <span class="text-blue-400">✓</span> 친환경 지열 수평/수직 열교환기 시공
+                            <span class="text-blue-400 font-bold">✓</span> 친환경 지열 수평/수직 열교환기 시공
                         </li>
                         <li class="flex items-center gap-3">
-                            <span class="text-blue-400">✓</span> 고성능 수중펌프 설치 및 에어징(청소)
+                            <span class="text-blue-400 font-bold">✓</span> 고성능 수중펌프 설치 및 에어징(청소)
                         </li>
                     </ul>
                 </div>
@@ -176,28 +174,30 @@
         </div>
     </section>
 
-    <!-- 5. Projects Section (시공실적) -->
+    <!-- 5. Projects Section (시공실적 - 배경 사진 또렷하게 수정) -->
     <section id="projects" class="relative py-28 bg-cover bg-center bg-fixed border-t border-neutral-800" style="background-image: url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1920&q=80');">
-        <div class="absolute inset-0 bg-black/85 backdrop-blur-[1px]"></div>
+        <!-- 어두운 오버레이 연하게 조정 (bg-black/40) -->
+        <div class="absolute inset-0 bg-black/40"></div>
+
         <div class="relative z-10 max-w-7xl mx-auto px-6 sm:px-8">
             <div class="mb-16">
-                <span class="text-blue-400 text-xs font-semibold tracking-widest uppercase block mb-2">Projects</span>
-                <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">주요 시공 실적</h2>
+                <span class="text-blue-400 text-xs font-semibold tracking-widest uppercase block mb-2 drop-shadow">Projects</span>
+                <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight drop-shadow-md">주요 시공 실적</h2>
             </div>
             <div class="grid md:grid-cols-3 gap-6">
-                <div class="bg-black/60 border border-white/10 backdrop-blur-md rounded-xl p-6">
+                <div class="bg-black/70 border border-white/10 backdrop-blur-md rounded-xl p-6">
                     <span class="text-xs text-blue-400 font-mono">농업용 관정</span>
                     <h4 class="text-lg font-semibold text-white mt-1 mb-2">가평군 농가 암반 지하수 개발</h4>
                     <p class="text-xs text-neutral-300">심도 150m 천공 및 수중펌프 인스톨 완료</p>
                 </div>
-                <div class="bg-black/60 border border-white/10 backdrop-blur-md rounded-xl p-6">
+                <div class="bg-black/70 border border-white/10 backdrop-blur-md rounded-xl p-6">
                     <span class="text-xs text-blue-400 font-mono">공업용 관정</span>
                     <h4 class="text-lg font-semibold text-white mt-1 mb-2">산업단지 공장용 용수 개발</h4>
                     <p class="text-xs text-neutral-300">일일 200톤 규모 수량 확보 및 영향평가 완료</p>
                 </div>
-                <div class="bg-black/60 border border-white/10 backdrop-blur-md rounded-xl p-6">
+                <div class="bg-black/70 border border-white/10 backdrop-blur-md rounded-xl p-6">
                     <span class="text-xs text-blue-400 font-mono">지열 시스템</span>
-                    <h4 class="text-lg font-semibold text-white mt-1 mb-2">신축 전원주택 지열 냉난방 공사</h4>
+                    <h4 class="text-lg font-semibold text-white mt-1 mb-2">신축 전원주택지열 냉난방 공사</h4>
                     <p class="text-xs text-neutral-300">지중열교환기 4공 천공 및 배관 연결 완공</p>
                 </div>
             </div>
@@ -218,7 +218,6 @@
                 </button>
             </div>
 
-            <!-- 게시판 목록 -->
             <div class="bg-black border border-neutral-800 rounded-xl overflow-hidden shadow-2xl">
                 <div class="overflow-x-auto">
                     <table class="w-full text-left text-xs sm:text-sm text-neutral-300">
@@ -236,37 +235,37 @@
                                 <td class="py-4 px-4 text-center text-neutral-500">125</td>
                                 <td class="py-4 px-6 text-white font-normal flex items-center gap-2">
                                     <span class="bg-blue-500/10 text-blue-400 text-[11px] px-2 py-0.5 rounded border border-blue-500/20">소공</span>
-                                    밭 100평정도 샀는데 소공 작업 문의 드립니다
+                                    땅 100평정도 샀는데 소공 작업 문의 드립니다
                                 </td>
-                                <td class="py-4 px-4 text-center text-neutral-400">이병석</td>
+                                <td class="py-4 px-4 text-center text-neutral-400">최진</td>
                                 <td class="py-4 px-4 text-center text-neutral-500">2026/06/30</td>
                                 <td class="py-4 px-4 text-center text-neutral-500">1</td>
                             </tr>
                             <tr class="hover:bg-neutral-900/40 transition">
                                 <td class="py-4 px-4 text-center text-neutral-500">124</td>
                                 <td class="py-4 px-6 text-white font-normal">농업용 지하수 소공 문의합니다.</td>
-                                <td class="py-4 px-4 text-center text-neutral-400">김재천</td>
+                                <td class="py-4 px-4 text-center text-neutral-400">김진철</td>
                                 <td class="py-4 px-4 text-center text-neutral-500">2026/04/30</td>
                                 <td class="py-4 px-4 text-center text-neutral-500">0</td>
                             </tr>
                             <tr class="hover:bg-neutral-900/40 transition">
                                 <td class="py-4 px-4 text-center text-neutral-500">123</td>
                                 <td class="py-4 px-6 text-white font-normal">농업용 관정 견적서 요청</td>
-                                <td class="py-4 px-4 text-center text-neutral-400">홍금보</td>
+                                <td class="py-4 px-4 text-center text-neutral-400">이태호</td>
                                 <td class="py-4 px-4 text-center text-neutral-500">2026/01/15</td>
                                 <td class="py-4 px-4 text-center text-neutral-500">2</td>
                             </tr>
                             <tr class="hover:bg-neutral-900/40 transition">
                                 <td class="py-4 px-4 text-center text-neutral-500">122</td>
-                                <td class="py-4 px-6 text-white font-normal">80m이상 지하수개발 공사 비용 문의</td>
-                                <td class="py-4 px-4 text-center text-neutral-400">조영범</td>
+                                <td class="py-4 px-6 text-white font-normal">200m이상 지하수개발 공사 비용 문의</td>
+                                <td class="py-4 px-4 text-center text-neutral-400">이성호</td>
                                 <td class="py-4 px-4 text-center text-neutral-500">2026/01/05</td>
                                 <td class="py-4 px-4 text-center text-neutral-500">1</td>
                             </tr>
                             <tr class="hover:bg-neutral-900/40 transition">
                                 <td class="py-4 px-4 text-center text-neutral-500">121</td>
                                 <td class="py-4 px-6 text-white font-normal">가평읍 전원주택 지하수 관정 견적문의</td>
-                                <td class="py-4 px-4 text-center text-neutral-400">한지민</td>
+                                <td class="py-4 px-4 text-center text-neutral-400">박원호</td>
                                 <td class="py-4 px-4 text-center text-neutral-500">2025/11/26</td>
                                 <td class="py-4 px-4 text-center text-neutral-500">3</td>
                             </tr>
@@ -277,7 +276,7 @@
         </div>
     </section>
 
-    <!-- 견적문의 작성 모달 팝업 창 (네이버 이메일 연동 완료) -->
+    <!-- 견적문의 작성 모달 팝업 창 -->
     <div id="modal" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
         <div class="bg-neutral-900 border border-neutral-800 w-full max-w-lg rounded-2xl p-6 sm:p-8 shadow-2xl relative">
             <button onclick="toggleModal()" class="absolute top-5 right-5 text-neutral-400 hover:text-white">
@@ -286,9 +285,7 @@
             <h3 class="text-xl font-bold text-white mb-2">지하수 개발 견적 문의</h3>
             <p class="text-xs text-neutral-400 mb-6">내용을 작성해주시면 대표 이메일(q3292@naver.com)로 즉시 전송됩니다.</p>
             
-            <!-- FormSubmit 서비스 연동: q3292@naver.com으로 발송 -->
             <form action="https://formsubmit.co/q3292@naver.com" method="POST" class="space-y-4">
-                <!-- 스팸 방지 및 자동 이메일 스제목 설정 -->
                 <input type="hidden" name="_subject" value="[삼성지하수] 신규 견적 문의가 접수되었습니다!">
                 <input type="hidden" name="_captcha" value="false">
                 
